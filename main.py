@@ -16,3 +16,9 @@ print(p.findall(s))
 print(re.findall('\W',s))
 print(re.sub('Hello','Hi',string,count=1))
 print(re.sub(r'\sand\s',' & ',string))
+
+#extraction d'adresses mail
+
+m= "Hello from shubhamg199630@gmail.com to priya@yahoo.com about the meeting @2PM"
+
+print(re.findall('\S+@\S+',m))
